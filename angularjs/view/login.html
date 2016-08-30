@@ -3,14 +3,14 @@
 	
 	<div class="emptyBox30"></div>
 
-	<input class="form-control text-center" type="text" placeholder="Login"/>
-	<input class="form-control text-center" type="text"  placeholder="Senha"/>
+	<input class="form-control text-center" type="email" placeholder="Login" ng-model="loginData.email"/>
+	<input class="form-control text-center" type="password"  placeholder="Senha" ng-model="loginData.senha"/>
 
 	<div class="emptyBox30"></div>
 
-	<button class="btn btn-primary btn-block">Entrar</button>
+	<button class="btn btn-primary btn-block" ng-click="login(loginData)">Entrar</button>
 	<button class="btn btn-danger btn-block">Esqueceu Senha</button>
 
-	<h4>{{message}}</h4>
+	<h4>authorized = {{authenticated}}</h4>
 </div>
 
