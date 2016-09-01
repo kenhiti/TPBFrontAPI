@@ -5,7 +5,7 @@ app.factory('loginService', function($http, $location, config, $rootScope, userS
 		login : function(loginData, scope){	
 
 			var httpMethod = 'GET';
-			var resource = "login/" + loginData.email;
+			var resource = "contas/email/" + loginData.email;
 			var headers = userService.getHeader(httpMethod, resource, loginData, null);
 			var $promise = $http.get(config.baseURL+"/contas/email/"+loginData.email, {headers : headers});
 			
@@ -41,8 +41,7 @@ app.factory('loginService', function($http, $location, config, $rootScope, userS
 
 		logout :  function(){
 			console.log("Entrou no logout loginService");
-			$rootScope.authenticated = false;
-			$rootScope.preAuth = false;
+			$rootScope.authenticated = false;			
 			$location.path('/login');			
 		},
 

@@ -36,6 +36,9 @@ app.factory("userService", function($rootScope, $location){
 				var caminho = "/" + resource;
 
 				var sign = metodo + conteudo + tipoConteudo + date.toString()+ "\n" + caminho;					
+				
+				console.log("sign = ");
+				console.log(sign);
 
 				var hash = CryptoJS.HmacSHA256(sign, senha);
 				var HMACHash = CryptoJS.enc.Base64.stringify(hash);
