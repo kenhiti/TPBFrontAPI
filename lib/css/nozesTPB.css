@@ -1,0 +1,251 @@
+.exclamationIconCalendar{
+    float: right;
+    right: 60px;
+    display: block;
+    position: absolute;
+    margin: 11px 2px 4px 10px;
+    z-index: 3;
+    width: 16px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.BorderError{
+	border: 2px solid #d71b29 !important;
+}
+
+.BorderValid{
+	border: 2px solid #25b00f !important;
+}
+
+
+.DisplayInline{
+	display: inline !important;
+}
+
+.campo100{width:100px;}
+.campo150{width:150px;}	
+.campo200{width:200px;}
+.campo250{width:250px;}	
+.campo300{width:300px;}
+
+.sidebarDisabled{
+    margin-left: 0px !important;
+}
+
+.esqueceu-senha {
+  font-size: 14px;
+  float: right;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.avatarAGO{
+	
+	margin: 10px;	
+}
+
+.divAvatarAGO{
+	border-style: solid !important;
+	border-color: #3d4957 !important;
+	border-width: 1px 0px !important;
+}
+
+.BotaoPhone{	
+	-moz-border-radius:7px !important;
+	-webkit-border-radius:7px !important;
+	 border-radius:7px !important;
+}
+
+.TexAlCenter{ text-align:center !important;}
+.TexAlLeft{ text-align:left !important;}
+.TexAlRight{ text-align:right !important;}
+
+
+.LeadenBody {
+    background-color: #323A45;
+}
+
+.Container100 {
+    width: 100%;
+    float: left;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.Wid30 {
+    width: 30%;
+}
+
+.OvHidden {
+    overflow: hidden;
+}
+
+.DispBlock {
+    display: block;
+}
+
+.MarAuto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Card {
+    padding: 15px 25px;
+    display: block;
+    background-color: #FFF;
+    border-radius: 3px;
+    font-family: "open_sansregular","Verdana";
+    color: #29506B;
+    border: 1px solid #5F6870;
+}
+
+.ShadowEffect {
+    box-shadow: 0px 0.5px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.LimeBack {
+    background-color: #AFB42B;
+    border-color: #AFB42B;
+}
+.FontVoltBold {
+    font-family: "open_sansbold","Verdana";
+}
+
+}
+.Container40 {
+    width: 40%;
+    float: left;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.FontBold{font-weight: bold;}
+
+/*Fonts importadas*/
+.RobotoRegularFont{
+	font-family: "roboto-regular";
+}
+@font-face {
+	font-family: "roboto-regular";
+    src: url("/lib/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+/* Font Sizes */
+.Fs9{font-size:9px !important;} 
+.Fs10{font-size:10px !important;} 
+.Fs11{font-size:11px !important;} 
+.Fs12{font-size:12px !important;} 
+.Fs13{font-size:13px !important;} 
+.Fs14{font-size:14px !important;} 
+.Fs15{font-size:15px !important;} 
+.Fs16{font-size:16px !important;} 
+.Fs17{font-size:17px !important;} 
+.Fs18{font-size:18px !important;} 
+.Fs19{font-size:19px !important;} 
+.Fs20{font-size:20px !important;} 
+.Fs21{font-size:21px !important;} 
+.Fs22{font-size:22px !important;} 
+.Fs23{font-size:23px !important;} 
+.Fs24{font-size:24px !important;} 
+.Fs25{font-size:25px !important;} 
+.Fs26{font-size:26px !important;} 
+.Fs27{font-size:27px !important;} 
+.Fs28{font-size:28px !important;} 
+.Fs29{font-size:29px !important;} 
+.Fs30{font-size:30px !important;}
+.Fs40{font-size:40px !important;}
+.Fs50{font-size:50px !important;}
+.Fs60{font-size:60px !important;}
+.Fs100{font-size:100px !important;}
+.Fs130{font-size:130px !important;}
+
+/*Floats*/
+
+.FloatLeft{float: left !important;}
+.FloatRight{float: right !important;}
+.FloatNone{float: none !important};
+
+
+/*Color fonts*/
+.White{color:#FFF !important;}
+.WhiteBlue{color:#E1F5FE !important;}
+.SoftBlue{color:#03A9F4 !important;}
+.Blue{color:#0288D1 !important;}
+.Turquoise{color:#26C6DA !important;}
+.SoftGray{color:#ECEFF1 !important;}
+.Gray{color:#90A4AE !important;}
+.BoldGray{color:#4B4B4D !important;}
+.SoftOrange{color:#FFCC80 !important;}
+.Orange{color:#FB8C00 !important;}
+.SoftGreen{color:#A5D6A7 !important;}
+.Green{color:#43A047 !important;}
+.LeadenGreen{color:#26A69A !important;}
+.SoftRed{color:#EF9A9A !important;}
+.Red{color:#E53935 !important;}
+.Pink{color:#FF4081 !important;}
+.SoftPurple{color:#CE93D8 !important;}
+.Purple{color:#8E24AA !important;}
+.Yellow{color:#F7D100 !important;}
+.LimeAGO {color: #A3CD46 !important;}
+.OrangeAGO{color:#E39E38 !important;}
+
+.portlet.box.Lime > .portlet-title {background-color: #A3CD46;}
+
+.btn-success{
+  	color: #FFFFFF;
+  	background-color: #A3CD46;  	
+  }
+
+/* Empty Boxes */
+.EmptyBox5{ display:block; width:100%; height:5px; overflow:hidden;}
+.EmptyBox10{ display:block; width:100%; height:10px; overflow:hidden;}
+.EmptyBox20{ display:block; width:100%; height:20px; overflow:hidden;}
+.EmptyBox30{ display:block; width:100%; height:30px; overflow:hidden;}
+.EmptyBox40{ display:block; width:100%; height:40px; overflow:hidden;}
+.EmptyBox50{ display:block; width:100%; height:50px; overflow:hidden;}
+.EmptyBox60{ display:block; width:100%; height:60px; overflow:hidden;}
+.EmptyBox70{ display:block; width:100%; height:70px; overflow:hidden;}
+.EmptyBox80{ display:block; width:100%; height:80px; overflow:hidden;}
+.EmptyBox90{ display:block; width:100%; height:90px; overflow:hidden;}
+.EmptyBox100{ display:block; width:100%; height:100px; overflow:hidden;}
+.EmptyBox110{ display:block; width:100%; height:100px; overflow:hidden;}
+.EmptyBox120{ display:block; width:100%; height:100px; overflow:hidden;}
+.EmptyBox130{ display:block; width:100%; height:100px; overflow:hidden;}
+.EmptyBox140{ display:block; width:100%; height:100px; overflow:hidden;}
+.EmptyBox150{ display: block; width: 100%; height:150px; overflow:hidden;}
+
+/* Width */
+.Wid100{ width:100%;}
+.Wid90{ width:90%;}
+.Wid80{ width:80%;}
+.Wid70{ width:70%;}
+.Wid60{ width:60%;}
+.Wid50{ width:50%;}
+.Wid45{ width:45%;}
+.Wid40{ width:40%;}
+.Wid30{ width:30%;}
+
+
+.Wid33{ width:33.3%;}
+.Wid25{ width:25%;}
+.Wid22{ width:22%;}
+.Wid20{ width:20%;}
+.Wid10{ width:10%;}
+.Wid50PX{width:50px;}
+.Wid100PX{width:100px;}
+.Wid200PX{width:200px;}
+.Wid280PX{width:280px;}
+.Wid300PX{width:300px;}
+
+.Bold{font-weight: bold !important;}
+
+.Separator {
+    border-bottom: 2px dashed rgb(204, 204, 204);
+	width: 100%;
+	overflow: hidden;
+	height: 0px;
+	margin: 15px 0px;
+	clear: both;
+	padding-top: 20px;
+}

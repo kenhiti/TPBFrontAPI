@@ -1,5 +1,5 @@
-app.controller("loginCtrl", function($scope, loginService){
-	console.log("loginCtrl");
+app.controller("loginCtrl", function($scope, loginService, tplService){
+	tplService.getClass();
 
 	$scope.message = "PPI2.";
 
