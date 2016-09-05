@@ -12,7 +12,7 @@ app.run(function($rootScope, $location, loginService){
 		}
 		else{
 			if($rootScope.authenticated){
-				$location.path('/home');
+				$location.path(path);
 			}
 		}	
 	});	

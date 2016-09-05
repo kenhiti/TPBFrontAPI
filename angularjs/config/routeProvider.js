@@ -9,9 +9,24 @@ app.config(function($routeProvider){
 		controller : 'homeCtrl'
 	});
 
-	$routeProvider.when("/autor", {
-		templateUrl : '/thePirateBook/angularjs/view/autor.html',
-		controller : 'autorCtrl'
+	$routeProvider.when("/cadastroAutor", {
+		templateUrl : '/thePirateBook/angularjs/view/cadastroAutor.html',
+		controller : 'cadastroAutorCtrl'
+	});
+
+	$routeProvider.when("/cadastroAutor/:id", {
+		templateUrl : '/thePirateBook/angularjs/view/cadastroAutor.html',
+		controller : 'cadastroAutorCtrl'
+	});
+
+	$routeProvider.when("/pesquisaAutor", {
+		templateUrl : '/thePirateBook/angularjs/view/pesquisaAutor.html',
+		controller : 'pesquisaAutorCtrl',
+		resolve:{
+			autores: function(autorAPI){
+				return autorAPI.getAutores();
+			}
+		}
 	});
 
 	$routeProvider.otherwise({
