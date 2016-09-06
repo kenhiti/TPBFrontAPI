@@ -1,6 +1,6 @@
 <!-- <div class="jumbotron">
 	<img src="lib/img/text_698x89.png" width=" 300px" height="40">
-	
+
 	<div class="emptyBox30"></div>
 
 	<input class="form-control text-center" type="email" placeholder="Login" ng-model="loginData.email"/>
@@ -15,37 +15,36 @@
 </div> -->
 
 <div class="logo">
-	<a href="#"><img src="lib/img/text_698x89.png" alt="Logo" width=" 300px" height="40"/></a>	
+	<a href="#"><img src="lib/img/text_698x89.png" alt="Logo" width=" 300px" height="40"/></a>
 </div>
 
-<div class="content">	
-		<form name="loginForm"> 
-						
+<div class="content">
+		<form name="loginForm">
+
 			<div id="mensagem" ng-show="visualizaMensagem" class="{{tipoMensagem}}">
 					{{mensagem}}
 			</div>
-			
+
 			<div class="form-group">
 				<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
 				<label class="control-label visible-ie8 visible-ie9">Usuário</label>
 				<input class="form-control form-control-solid placeholder-no-fix" type="text" placeholder="Usuário" ng-model="loginData.email"/>
 			</div>
-			
+
 			<div class="form-group">
 				<label class="control-label visible-ie8 visible-ie9">Senha</label>
 				<input class="form-control form-control-solid placeholder-no-fix" type="password" placeholder="Senha" ng-model="loginData.senha"/>
 			</div>
-						
-			<div class="form-actions">				
-				<button type="submit" class="btn btn-success uppercase" ng-click="login(loginData)">Acessar</button>	
-				<a href="#"><input type="button" class="btn btn-default uppercase Wid100" value="Solicitar Acesso"></a>					
-				<a href="#" class="forget-password">Esqueceu a senha?</a>
-			</div>	
-			
-			
-			<div style="padding: 1em;"></div>			
+
+			<div class="form-actions">
+				<button type="submit" class="btn btn-success uppercase" ng-click="login(loginData)">Entrar</button>
+				<a href="#"><input type="button" class="btn btn-default-remember uppercase Wid100" value="Esqueceu a senha?"></a>
+				<a href="#"><input type="button" class="btn btn-default uppercase Wid100" value="Cadastre-se!"></a>
+			</div>
+
+
+			<div style="padding: 1em;"></div>
 			<h4>authorized = {{authenticated}}</h4>
 		</form>
-	
-</div>
 
+</div>

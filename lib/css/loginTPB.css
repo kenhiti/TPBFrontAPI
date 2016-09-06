@@ -11,7 +11,7 @@
 
 
 p.hint{
-  
+
 }
 
 .login .logo {
@@ -48,12 +48,12 @@ p.hint{
   color: #555;
 }
 
-.login .content .hint {  
+.login .content .hint {
   padding: 0;
   margin: 15px 0 7px 0;
   font-size: 1.2em;
   font-weight: bold;
-  color: #6B6868;  
+  color: #6B6868;
 }
 
 .login .content .login-form,
@@ -67,7 +67,7 @@ p.hint{
   background-color: #FFFFFF; /* Alterado */
   height: 43px;
   color: #8290a3;
-  border: 1px solid #96989A;
+  border-bottom: 1px solid #96989A;
   text-align: center;
 }
 .login .content .form-control:focus, .login .content .form-control:active {
@@ -162,11 +162,11 @@ p.hint{
   padding: 10px 20px !important;
   margin-top:10px;
   color: #FFFFFF;
-  background-color: #A3CD46;
+  background-color: #0288D1;
 }
 
-.login .content .form-actions .btn-success:hover {  
-  background-color: #b1d26a;
+.login .content .form-actions .btn-success:hover {
+  background-color: #0288D1;
 }
 
 .login .content .form-actions .btn-danger {
@@ -177,7 +177,7 @@ p.hint{
   background-color: #EC111B;
 }
 
-.login .content .form-actions .btn-danger:hover {  
+.login .content .form-actions .btn-danger:hover {
   background-color: #F3565D;
 }
 
@@ -186,10 +186,18 @@ p.hint{
   padding: 10px 20px !important;
   margin-top:10px;
   color: #FFFFFF;
-  background-color: #606062;
+  background-color: #66BB6A;
 }
 
-.login .content .form-actions .btn-default:hover {  
+.btn-default-remember {
+  font-weight: 600;
+  padding: 10px 20px !important;
+  margin-top:10px;
+  color: #FFFFFF;
+  background-color: #8E24AA;
+}
+
+.login .content .form-actions .btn-default:hover {
   background-color: #727376;
 }
 
@@ -271,10 +279,10 @@ p.hint{
   .login .checkbox {
     font-size: 13px;
   }
-  
+
   .btn-success{
   	color: #FFFFFF;
-  	background-color: #A3CD46;  	
+  	background-color: #A3CD46;
   }
-  
+
 }
