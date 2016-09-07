@@ -1,5 +1,5 @@
 /*********************************
- METRONIC SQUARE STYLE COMPONENTS 
+ METRONIC SQUARE STYLE COMPONENTS
 *********************************/
 /***
 Rounded corners reset
@@ -54,8 +54,8 @@ body {
 }
 
 /*
- Internet Explorer 10 doesn't differentiate device width from viewport width, and thus doesn't 
- properly apply the media queries in Bootstrap's CSS. To address this, 
+ Internet Explorer 10 doesn't differentiate device width from viewport width, and thus doesn't
+ properly apply the media queries in Bootstrap's CSS. To address this,
  you can optionally include the following CSS and JavaScript to work around this problem until Microsoft issues a fix.
 */
 @-webkit-viewport {
@@ -74,8 +74,8 @@ body {
   width: device-width;
 }
 /*
- Internet Explorer 10 doesn't differentiate device width from viewport width, 
- and thus doesn't properly apply the media queries in Bootstrap's CSS. To address this, following CSS code applied 
+ Internet Explorer 10 doesn't differentiate device width from viewport width,
+ and thus doesn't properly apply the media queries in Bootstrap's CSS. To address this, following CSS code applied
 */
 @-ms-viewport {
   width: auto !important;
@@ -1312,7 +1312,7 @@ Users
 }
 
 /***
-Top News Blocks(new in v1.2.2) 
+Top News Blocks(new in v1.2.2)
 ***/
 .top-news {
   color: #fff;
@@ -1761,7 +1761,7 @@ Simple Line Icons Demo
     width: 33.333%;
   }
 }
-/*** 
+/***
 Glyphicons Demo
 ***/
 .glyphicons-demo ul {
@@ -2593,7 +2593,7 @@ Chats
 }
 
 /***
-Customized Bootstrap Close Icon 
+Customized Bootstrap Close Icon
 ***/
 .close {
   display: inline-block;
@@ -4069,7 +4069,7 @@ Metro icons
 }
 
 /***
-Customized Bootstrap Modal 
+Customized Bootstrap Modal
 ***/
 .modal {
   z-index: 10050;
@@ -5889,7 +5889,7 @@ Light Table
 }
 
 /***
-Customized Bootstrap Tabs 
+Customized Bootstrap Tabs
 ***/
 /* Tabs and pills */
 .nav-tabs,
@@ -6539,8 +6539,8 @@ AngularJS Basic Animations
 }
 /* Button */
 .btn.default {
-  color: #333333;
-  background-color: #E5E5E5;
+  color: #fff;
+  background-color: #0288D1;
 }
 .btn.default:hover, .btn.default:focus, .btn.default:active, .btn.default.active {
   color: #333333;
@@ -6598,7 +6598,7 @@ Blue Default
   background-image: none;
 }
 .blue.btn.disabled, .blue.btn.disabled:hover, .blue.btn.disabled:focus, .blue.btn.disabled:active, .blue.btn.disabled.active, .blue.btn[disabled], .blue.btn[disabled]:hover, .blue.btn[disabled]:focus, .blue.btn[disabled]:active, .blue.btn[disabled].active, fieldset[disabled] .blue.btn, fieldset[disabled] .blue.btn:hover, fieldset[disabled] .blue.btn:focus, fieldset[disabled] .blue.btn:active, fieldset[disabled] .blue.btn.active {
-  background-color: #3598dc;
+  background-color: #0288D1;
 }
 .blue.btn .badge {
   color: #3598dc;

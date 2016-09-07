@@ -86,7 +86,7 @@ Page Header
   float: left;
 }
 .page-header.navbar .page-logo .logo-default {
-  margin: 5px 0 0 0;
+  margin: 5px 0 0 30px;
 }
 .page-header.navbar .page-logo .logo-mini {
   display: none;
@@ -479,8 +479,8 @@ Page Header
     margin-left: 0;
   }
 }
-/*** 
-Horizontal Menu 
+/***
+Horizontal Menu
 ***/
 .page-header.navbar {
   /* Header container */
@@ -921,6 +921,7 @@ Page sidebar
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #455A65;
   /* 1st level links */
   /* all links */
 }
@@ -930,6 +931,7 @@ Page sidebar
   margin: 0;
   padding: 0;
   border: 0px;
+  background-color: #455A65;
 }
 .page-sidebar .page-sidebar-menu > li.sidebar-toggler-wrapper, .page-sidebar .page-sidebar-menu > li.sidebar-search-wrapper,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.sidebar-toggler-wrapper,
@@ -1082,6 +1084,7 @@ Page sidebar
   display: none;
   padding: 0;
   margin: 8px 0px 8px 0px;
+  background-color: #455A65;
 }
 .page-sidebar .page-sidebar-menu .sub-menu li,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li {
@@ -1695,8 +1698,8 @@ Quick Sidebar Layout
   right: 0;
 }
 
-/*** 
-Quick Sidebar Toggler 
+/***
+Quick Sidebar Toggler
 ***/
 .page-quick-sidebar-toggler {
   overflow: hidden;
@@ -2327,7 +2330,7 @@ Page footer
 }
 .page-footer .page-footer-inner {
   /* float: left;
-  display: inline-block; */  
+  display: inline-block; */
 }
 .page-footer-fixed.page-footer-fixed-mobile .page-footer {
   position: fixed;
@@ -2599,8 +2602,8 @@ Theme Panel
   margin-right: 255px;
 }
 
-/***  
-Page Loading       
+/***
+Page Loading
 ***/
 .page-on-load {
   background: #fefefe;

@@ -5,14 +5,14 @@
 			<span class="caption-subject BoldGray FontBold uppercase">{{titulo}}</span>
 		</div>
 	</div>
-	
-	<div class="portlet-body form">						
+
+	<div class="portlet-body form">
 		<form name="cadastroAutorForm" class="horizontal-form">
 			<div class="form-body">
-				
+
 				<ui-message message="{{message}}" type="{{type}}" render="{{render}}"></ui-message>
-				
-				<div class="row">									
+
+				<div class="row">
 					<div class="col-xs-12 col-md-4">
 						<div class="form-group">
 							<label class="control-label">Nome</label>
@@ -21,9 +21,9 @@
 								<input type="text" class="form-control" name="nome" ng-model="autor.nome" ng-required="true">
 							</div>
 						</div>
-					</div>					
+					</div>
 				</div>
-				
+
 				<div class="form-actions">
 					<a href="#/pesquisaAutor"><button type="button" class="btn default">Cancelar</button></a>
 					<button id="btnSalvar" type="submit" class="btn blue" ng-disabled="cadastroAutorForm.$invalid" ng-click="salvar(autor)">
@@ -33,5 +33,5 @@
 			</div>
 		</form>
 	</div>
-	
+
 </div>

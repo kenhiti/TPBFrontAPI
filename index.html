@@ -14,7 +14,7 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
-	
+
 	<!-- BEGIN GLOBAL MANDATORY STYLES -->
 	<!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
 	<link href="../resources/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -22,13 +22,13 @@
 	<link href="../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<link href="../resources/css/uniform.default.css" rel="stylesheet" type="text/css" />
 	<link href="../resources/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" /> -->
-	<!-- END GLOBAL MANDATORY STYLES -->	
-	
+	<!-- END GLOBAL MANDATORY STYLES -->
+
 	<!-- BEGIN PAGE STYLES -->
 	<!-- <link href="../resources/css/tasks.css" rel="stylesheet" type="text/css" />	 -->
-	
+
 	<!-- END PAGE STYLES -->
-	
+
 	<!-- BEGIN THEME STYLES -->
 	<!-- <link href="../resources/css/components.css" id="style_components"	rel="stylesheet" type="text/css" />
 	<link href="../resources/css/plugins.css" rel="stylesheet" type="text/css" />
@@ -49,27 +49,28 @@
 	<link href="lib/css/nozesTPB.css" rel="stylesheet" type="text/css"/>
 	<link href="lib/css/loginTPB.css" rel="stylesheet" type="text/css"/>
 
+
 	<link href="lib/css/plugins.css" rel="stylesheet" type="text/css" />
 	<link href="lib/css/layout.css" rel="stylesheet" type="text/css" />
 	<link href="lib/css/darkblue.css" rel="stylesheet" type="text/css" id="style_color" />
-	<link href="lib/css/custom.css" rel="stylesheet" type="text/css" />	
-	
+	<link href="lib/css/custom.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body ng-controller="AppController" ng-class="{'login': settings.loginPage,
-											   'page-header-fixed': settings.pageHeaderFixed, 
-								               'page-quick-sidebar-over-content': settings.pageQuickSidebarOverContent, 
-								               'page-sidebar-closed-hide-logo': settings.pageSidebarClosedHideLogo, 
+											   'page-header-fixed': settings.pageHeaderFixed,
+								               'page-quick-sidebar-over-content': settings.pageQuickSidebarOverContent,
+								               'page-sidebar-closed-hide-logo': settings.pageSidebarClosedHideLogo,
 								               'page-container-bg-solid': settings.pageContainerBgSolid}">
-  	
+
 
     <div ng-if="settings.pageHeaderView" ng-include="'angularjs/tpl/header.html'" ng-controller="HeaderController" class="page-header -i navbar navbar-fixed-top"></div>
-	
+
 	<div class="clearfix"></div>
-		
+
 	<div class="page-container">
 		<div ng-if="settings.pageSidebarView" ng-include="'angularjs/tpl/sidebar.html'" ng-controller="SidebarController" class="page-sidebar-wrapper"></div>
-		
+
 
 		<!-- Corpo da página-->
 		<div ng-class="{'page-content-wrapper': settings.pageContentWrapper}">
@@ -77,9 +78,9 @@
 						    'sidebarDisabled': settings.sidebarDisabled}">
 
 					<!-- ngView ANGULARJS -->
-					<div ng-view></div> 					
-				
-			</div> 
+					<div ng-view></div>
+
+			</div>
 		</div>
 		<!-- Fim do Corpo da página, transicional de páginas -->
 
@@ -87,15 +88,15 @@
 
 	<!-- RODAPÉ -->
 	<div ng-if="settings.pageFooterView" ng-include="'angularjs/tpl/footer.html'" ng-controller="FooterController" class="page-footer"></div>
-	
-	
+
+
 	<!--[if lt IE 9]>
 		<script src="../../assets/global/plugins/respond.min.js"></script>
-		<script src="../../assets/global/plugins/excanvas.min.js"></script> 
+		<script src="../../assets/global/plugins/excanvas.min.js"></script>
 	<![endif]-->
-	
+
 	<script src="lib/js/jquery.min.js" type="text/javascript"></script>
-	<script src="lib/js/jquery-migrate.min.js" type="text/javascript"></script>	
+	<script src="lib/js/jquery-migrate.min.js" type="text/javascript"></script>
 
 	<script src="lib/js/jquery-ui.min.js" type="text/javascript"></script>
 	<script src="lib/js/bootstrap.min.js" type="text/javascript"></script>
@@ -117,14 +118,14 @@
 	<script type="text/javascript" src="lib/js/angular-route.js"></script>
 	<script type="text/javascript" src="lib/js/angular-resource.js"></script>
 	<script type="text/javascript" src="lib/js/angular-messages.js"></script>
-	<script type="text/javascript" src="lib/js/angular-locale_pt-br.js"></script>	
-	<script type="text/javascript" src="lib/js/angular-cookies.js"></script>		
+	<script type="text/javascript" src="lib/js/angular-locale_pt-br.js"></script>
+	<script type="text/javascript" src="lib/js/angular-cookies.js"></script>
 	<script type="text/javascript" src="lib/js/angular-animate.js"></script>
 	<script type="text/javascript" src="lib/js/ui-bootstrap-tpls-1.1.2.js"></script>
-	
-	
-	<script type="text/javascript" src="angularjs/app/app.js"></script>	
-	<script type="text/javascript" src="angularjs/config/configValue.js"></script>	
+
+
+	<script type="text/javascript" src="angularjs/app/app.js"></script>
+	<script type="text/javascript" src="angularjs/config/configValue.js"></script>
 	<script type="text/javascript" src="angularjs/config/routeProvider.js"></script>
 	<script type="text/javascript" src="angularjs/config/permissionConfig.js"></script>
 
@@ -142,7 +143,7 @@
 	<script type="text/javascript" src="lib/js/hmac-sha256.js"></script>
 	<script type="text/javascript" src="lib/js/enc-base64.js"></script>
 	<script type="text/javascript" src="lib/js/md5.js"></script>
-	<script type="text/javascript" src="lib/js/jsencrypt.js"></script>	
+	<script type="text/javascript" src="lib/js/jsencrypt.js"></script>
 
 
 	<script type="text/javascript" src="angularjs/directives/uiMessageDirective.js"></script>
@@ -150,19 +151,19 @@
 	<script src="../lib/angularjs/services/userService.js"></script>
 	<script src="../lib/angularjs/services/loginService.js"></script>
 	<script src="../lib/angularjs/services/tfaService.js"></script>	 -->
-	
-	<script>	
-		jQuery(document).ready(function() {						
+
+	<script>
+		jQuery(document).ready(function() {
 			Metronic.init(); // init metronic core componets
 			Layout.init(); // init layout
 			QuickSidebar.init(); // init quick sidebar
-			Demo.init(); // init demo features			
-			Index.init();			
-		});		
+			Demo.init(); // init demo features
+			Index.init();
+		});
 
 		$(document).ready(function(){
-		    $('[data-toggle="tooltip"]').tooltip();   
-		});		
+		    $('[data-toggle="tooltip"]').tooltip();
+		});
 	</script>
 </body>
 

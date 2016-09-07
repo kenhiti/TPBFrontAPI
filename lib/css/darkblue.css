@@ -171,7 +171,7 @@ Page Header
 
 /* Default Horizontal Menu */
 .page-header.navbar {
-	border-bottom: 0.2em solid #ccc;
+	border-bottom: 0px solid #ccc;
   /* Default Mega Menu */
   /* Light Mega Menu */
 }
@@ -342,9 +342,11 @@ Page Header
 }
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a,
 .page-sidebar .page-sidebar-menu > li > a {
-  border-top: 1px solid #3d4957;
+  border-top: 1px solid #F1F3FA;
   color: #fff;
+  background-color: #455A65;
 }
+
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i,
 .page-sidebar .page-sidebar-menu > li > a > i {
   color: #606C7D;
@@ -368,8 +370,8 @@ Page Header
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a,
 .page-sidebar .page-sidebar-menu > li:hover > a,
 .page-sidebar .page-sidebar-menu > li.open > a {
-  background: #2C3542;
-  color: #455A64;
+  background: #455A65;
+  color: #fff;
 }
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a > i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a > i,
 .page-sidebar .page-sidebar-menu > li:hover > a > i,
@@ -909,7 +911,7 @@ Page Footer
 Boby
 ****/
 body {
-  background-color: #364150;
+  background-color: #455A65;
 }
 
 /****
