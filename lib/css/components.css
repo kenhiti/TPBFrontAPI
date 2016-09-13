@@ -1011,10 +1011,10 @@ h6.block {
 /* Links */
 a {
   text-shadow: none;
-  color: #5b9bd1;
+  color: #f1f3fa;
 }
 a:hover {
-  color: #3175af;
+  color: #f1f3fa;
 }
 a:focus, a:hover, a:active {
   outline: 0;
@@ -1983,6 +1983,7 @@ Customized Bootstrap Buttons
 .btn.dropdown-toggle, .btn-group .btn.dropdown-toggle, .btn:hover, .btn:disabled, .btn[disabled], .btn:focus, .btn:active, .btn.active {
   outline: none !important;
   background-image: none !important;
+  border: 1px solid #b3b3b3;
   filter: none;
   text-shadow: none;
   -webkit-box-shadow: none;
@@ -2092,7 +2093,7 @@ Customized Bootstrap Buttons
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
   color: #fff;
   background-color: #4c9ed9;
-  border-color: #307f7a;
+  border: 1px solid #b3b3b3;
 }
 .open .btn-success.dropdown-toggle {
   color: #fff;

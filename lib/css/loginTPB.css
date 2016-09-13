@@ -155,6 +155,7 @@ p.hint{
 
 .login .content .form-actions .btn {
   margin-top: 1px;
+  color: #fff;
 }
 
 .login .content .form-actions .btn-success {
@@ -198,7 +199,7 @@ p.hint{
 }
 
 .login .content .form-actions .btn-default:hover {
-  background-color: #727376;
+  background-color: #66bb6a;
 }
 
 .login .content .forget-password {

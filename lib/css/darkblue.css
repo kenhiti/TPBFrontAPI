@@ -37,7 +37,7 @@ Page Header
   /*alterado
   background-color: #3f4f62;
   */
-  background-color: #FFFFFF;
+  background-color: #455a65;
 }
 .page-header.navbar .top-menu .navbar-nav > li.dropdown.open .dropdown-toggle > i {
   color: #a4aebb;
@@ -342,9 +342,9 @@ Page Header
 }
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a,
 .page-sidebar .page-sidebar-menu > li > a {
-  border-top: 1px solid #F1F3FA;
-  color: #fff;
-  background-color: #455A65;
+  border: 1px solid #e1e1e1;
+  color: #333333;
+  background-color: #F1F3FA;
 }
 
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i,
@@ -370,8 +370,8 @@ Page Header
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a,
 .page-sidebar .page-sidebar-menu > li:hover > a,
 .page-sidebar .page-sidebar-menu > li.open > a {
-  background: #455A65;
-  color: #fff;
+  background: #f1f3fa;
+  color: #333333;
 }
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a > i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a > i,
 .page-sidebar .page-sidebar-menu > li:hover > a > i,
@@ -442,11 +442,11 @@ Page Header
 }
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a,
 .page-sidebar .page-sidebar-menu .sub-menu > li > a {
-  color: #fff;
+  color: #455a65;
 }
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i,
 .page-sidebar .page-sidebar-menu .sub-menu > li > a > i {
-  color: #606C7D;
+  color: #455a65;
 }
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i[class^="icon-"],
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i[class*="icon-"],
@@ -911,7 +911,7 @@ Page Footer
 Boby
 ****/
 body {
-  background-color: #455A65;
+  background-color: #f1f3fa;
 }
 
 /****
