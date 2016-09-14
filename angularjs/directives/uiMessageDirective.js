@@ -1,6 +1,6 @@
 app.directive("uiMessage", function(){
-	return{		
-		templateUrl: "../lib/angularjs/directives/message.html",
+	return{
+		templateUrl: "/thePirateBook/angularjs/directives/message.html",
 		replace: true,
 		restrict: "AE"
 	}
