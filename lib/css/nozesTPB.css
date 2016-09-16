@@ -24,9 +24,9 @@
 }
 
 .campo100{width:100px;}
-.campo150{width:150px;}	
+.campo150{width:150px;}
 .campo200{width:200px;}
-.campo250{width:250px;}	
+.campo250{width:250px;}
 .campo300{width:300px;}
 
 .sidebarDisabled{
@@ -41,8 +41,8 @@
 }
 
 .avatarAGO{
-	
-	margin: 10px;	
+
+	margin: 10px;
 }
 
 .divAvatarAGO{
@@ -51,7 +51,7 @@
 	border-width: 1px 0px !important;
 }
 
-.BotaoPhone{	
+.BotaoPhone{
 	-moz-border-radius:7px !important;
 	-webkit-border-radius:7px !important;
 	 border-radius:7px !important;
@@ -132,27 +132,27 @@
 }
 
 /* Font Sizes */
-.Fs9{font-size:9px !important;} 
-.Fs10{font-size:10px !important;} 
-.Fs11{font-size:11px !important;} 
-.Fs12{font-size:12px !important;} 
-.Fs13{font-size:13px !important;} 
-.Fs14{font-size:14px !important;} 
-.Fs15{font-size:15px !important;} 
-.Fs16{font-size:16px !important;} 
-.Fs17{font-size:17px !important;} 
-.Fs18{font-size:18px !important;} 
-.Fs19{font-size:19px !important;} 
-.Fs20{font-size:20px !important;} 
-.Fs21{font-size:21px !important;} 
-.Fs22{font-size:22px !important;} 
-.Fs23{font-size:23px !important;} 
-.Fs24{font-size:24px !important;} 
-.Fs25{font-size:25px !important;} 
-.Fs26{font-size:26px !important;} 
-.Fs27{font-size:27px !important;} 
-.Fs28{font-size:28px !important;} 
-.Fs29{font-size:29px !important;} 
+.Fs9{font-size:9px !important;}
+.Fs10{font-size:10px !important;}
+.Fs11{font-size:11px !important;}
+.Fs12{font-size:12px !important;}
+.Fs13{font-size:13px !important;}
+.Fs14{font-size:14px !important;}
+.Fs15{font-size:15px !important;}
+.Fs16{font-size:16px !important;}
+.Fs17{font-size:17px !important;}
+.Fs18{font-size:18px !important;}
+.Fs19{font-size:19px !important;}
+.Fs20{font-size:20px !important;}
+.Fs21{font-size:21px !important;}
+.Fs22{font-size:22px !important;}
+.Fs23{font-size:23px !important;}
+.Fs24{font-size:24px !important;}
+.Fs25{font-size:25px !important;}
+.Fs26{font-size:26px !important;}
+.Fs27{font-size:27px !important;}
+.Fs28{font-size:28px !important;}
+.Fs29{font-size:29px !important;}
 .Fs30{font-size:30px !important;}
 .Fs40{font-size:40px !important;}
 .Fs50{font-size:50px !important;}
@@ -194,7 +194,7 @@
 
 .btn-success{
   	color: #FFFFFF;
-  	background-color: #A3CD46;  	
+  	background-color: #A3CD46;
   }
 
 /* Empty Boxes */
@@ -248,4 +248,29 @@
 	margin: 15px 0px;
 	clear: both;
 	padding-top: 20px;
+}
+
+.btn.dropdown-toggle, .btn-group .btn.dropdown-toggle, .btn:hover, .btn:disabled, .btn[disabled], .btn:focus, .btn:active, .btn.active {
+    outline: none !important;
+    background-image: none !important;
+    filter: none;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+    color: #333;
+    background-color: #ededed;
+  }
+
+  .btn.dropdown-toggle, .btn-group .btn.dropdown-toggle, .btn:hover, .btn:disabled, .btn[disabled], .btn:focus, .btn:active, .btn.active {
+    outline: none !important;
+    background-image: none !important;
+    filter: none;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }

@@ -1,7 +1,7 @@
-app.service("editoraAPI", function($http, $config, userService) {
+app.service("editoraAPI", function($http, config, userService) {
 
-  this.getEditora = function {
-    return $http.get(config.baseURL+"/editoras", {headers: userService.getHeader('GET', 'autores', null, null)});
+  this.getEditora = function() {
+    return $http.get(config.baseURL+"/editoras", {headers: userService.getHeader('GET', 'editoras', null, null)});
   };
 
   this.getEditoraById = function(id) {
