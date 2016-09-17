@@ -274,3 +274,7 @@
     -moz-box-shadow: none;
     box-shadow: none;
 }
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a, .page-sidebar .page-sidebar-menu .sub-menu > li > a {
+    color: #050404;
+}

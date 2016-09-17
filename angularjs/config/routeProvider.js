@@ -9,6 +9,7 @@ app.config(function($routeProvider){
 		controller : 'homeCtrl'
 	});
 
+
 	$routeProvider.when("/cadastroAutor", {
 		templateUrl : '/thePirateBook/angularjs/view/cadastroAutor.html',
 		controller : 'cadastroAutorCtrl'
@@ -48,6 +49,29 @@ app.config(function($routeProvider){
 			}
 		}
 	});
+
+
+
+	$routeProvider.when("/cadastroCategoria", {
+		templateUrl : '/thePirateBook/angularjs/view/cadastroCategoria.html',
+		controller : 'cadastroCategoriaCtrl'
+	});
+
+	$routeProvider.when("/cadastroCategoria/:id", {
+		templateUrl : '/thePirateBook/angularjs/view/cadastroCategoria.html',
+		controller : 'cadastroCategoriaCtrl'
+	});
+
+	$routeProvider.when("/pesquisaCategoria", {
+		templateUrl : '/thePirateBook/angularjs/view/pesquisaCategoria.html',
+		controller : 'pesquisaCategoriaCtrl',
+		resolve:{
+			categorias: function(categoriaAPI){
+				return categoriaAPI.getCategoria();
+			}
+		}
+	});
+
 
 	$routeProvider.otherwise({
 		redirectTo: '/login'

@@ -1,7 +1,7 @@
 app.run(function($rootScope, $location, loginService){
 	$rootScope.authenticated = false;
 
-	var routePermission = ['/home','/cadastroAutor','/pesquisaAutor','/cadastroEditora','/pesquisaEditora'];
+	var routePermission = ['/home','/cadastroAutor','/pesquisaAutor','/cadastroEditora','/pesquisaEditora', '/cadastroCategoria', '/pesquisaCategoria'];
 
 	$rootScope.$on('$routeChangeStart', function(){
 		var path = $location.path();
