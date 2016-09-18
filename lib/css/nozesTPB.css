@@ -276,5 +276,71 @@
 }
 
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a, .page-sidebar .page-sidebar-menu .sub-menu > li > a {
-    color: #050404;
+    color: #080808;
+}
+
+.page-container-bg-solid .page-content {
+    background: #efecec;
+}
+
+.page-content-wrapper .page-content {
+    margin-left: 235px;
+    margin-top: 0px;
+    min-height: 600px;
+    padding: 25px 20px 10px 20px;
+}
+
+.portlet.light {
+    padding: 12px 20px 15px 20px;
+    background-color: #f1f3fa;
+}
+
+.portlet.light.bordered > .portlet-title {
+    border-bottom: 1px solid #455a65;
+}
+
+.portlet.light.bordered {
+    border: 1px solid #455a65 !important;
+}
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a, .page-sidebar .page-sidebar-menu > li > a {
+    border-bottom: 1px solid #455a65;
+    color: #333333;
+    background-color: #F1F3FA;
+}
+
+.page-container-bg-solid .page-content {
+    background: #efecec;
+    border-left: 1px solid #455a65;
+}
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a > .arrow.open:before, .page-sidebar .page-sidebar-menu li > a > .arrow:before, .page-sidebar .page-sidebar-menu li > a > .arrow.open:before {
+    color: #455a65;
+}
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i[class^="icon-"], .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i[class*="icon-"], .page-sidebar .page-sidebar-menu > li > a > i[class^="icon-"], .page-sidebar .page-sidebar-menu > li > a > i[class*="icon-"] {
+    color: #455a65;
+}
+
+.btn.default:hover, .btn.default:focus, .btn.default:active, .btn.default.active {
+    color: #efecec;
+    background-color: #0288D1;
+}
+
+
+
+.form .form-actions {
+    padding: 20px 10px;
+    margin: 0;
+    background-color: #FFFFFF;
+    border-top: 1px solid #455a65;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    color: #f1f3fa;
+    background-color: #0288D1;
+}
+
+.btn .btn-primary .btn-block {
+  width: 100px;
 }

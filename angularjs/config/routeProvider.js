@@ -67,7 +67,7 @@ app.config(function($routeProvider){
 		controller : 'pesquisaCategoriaCtrl',
 		resolve:{
 			categorias: function(categoriaAPI){
-				return categoriaAPI.getCategoria();
+				return categoriaAPI.getCategorias();
 			}
 		}
 	});

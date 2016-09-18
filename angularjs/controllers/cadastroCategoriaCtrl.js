@@ -37,7 +37,7 @@ app.controller("cadastroCategoriaCtrl", function($scope,$routeParams, categoriaA
 	}
 
 	var buscarEdicao = function(){
-		categoriaAPI.getCategoriaById($routeParams.id).success(function(data){
+		autorAPI.getCategoriaById($routeParams.id).success(function(data){
 			$scope.categoria = data;
 		});
 	};
