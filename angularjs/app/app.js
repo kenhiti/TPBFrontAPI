@@ -11,7 +11,10 @@ app.controller('FooterController', function($scope){
 
 //Controlador do Header
 app.controller("HeaderController", function($rootScope, $scope, loginService){
-
+	$scope.logout =  function(){
+			loginService.logout();			
+	};
+	
 	$scope.$on('$includeContentLoaded', function(){
 		console.log("header");
 		Layout.initHeader();

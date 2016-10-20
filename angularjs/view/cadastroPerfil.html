@@ -1,0 +1,79 @@
+<div class="portlet light bordered">
+	<div class="portlet-title">
+		<div class="caption">
+			<i class="icon-settings BoldGray"></i>
+			<span class="caption-subject BoldGray FontBold uppercase">{{titulo}}</span>
+		</div>
+	</div>
+
+	<div class="portlet-body form">
+		<form name="cadastroPerfilForm" class="horizontal-form">
+			<div class="form-body">
+
+				<ui-message message="{{message}}" type="{{type}}" render="{{render}}"></ui-message>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="form-group">
+							<label class="control-label">Nome</label>
+							<div class="input-icon right">
+								<i class="fa fa-exclamation-triangle" ng-show="cadastroPerfilForm.descricao.$invalid"></i>
+								<input type="text" class="form-control" name="descricao" ng-model="perfil.descricao" ng-required="true">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-3">						
+						<div class="form-group">								
+							<label class="control-label">Início da validade</label>
+							<div class="input-group">						
+								<i ng-style="cadastroPerfilForm.inicioValidade.$invalid == true ? {'display':'block !important'} : {}" class="fa fa-exclamation-triangle OrangeAGO exclamationIconCalendar" ng-show="cadastroPerfilForm.inicioValidade.$invalid"></i>
+								<input type="text" class="form-control" name="inicioValidade" ng-model="perfil.inicioValidade" ng-required="true" 
+									uib-datepicker-popup="{{datePattern}}"  
+									is-open="showPopupInicio" 
+									datepicker-options="dateOptions"  
+									close-text="Fechar"
+									clear-text="Limpar"
+									current-text="Data Atual"/>
+					          	<span class="input-group-btn">
+					            	<button style="border : 1px solid #96989a" class="btn btn-default" ng-click="openPopupInicio()"><i class="glyphicon glyphicon-calendar"></i></button>
+					          	</span>					        
+				          	</div>
+					    </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-3">						
+						<div class="form-group">								
+							<label class="control-label">Final da validade</label>
+							<div class="input-group">						
+								<i ng-style="cadastroPerfilForm.fimValidade.$invalid == true ? {'display':'block !important'} : {}" class="fa fa-exclamation-triangle OrangeAGO exclamationIconCalendar" ng-show="cadastroPerfilForm.fimValidade.$invalid"></i>
+								<input type="text" class="form-control" name="fimValidade" ng-model="perfil.fimValidade" ng-required="true" 
+									uib-datepicker-popup="{{datePattern}}"  
+									is-open="showPopupFim" 
+									datepicker-options="dateOptions"  
+									close-text="Fechar"
+									clear-text="Limpar"
+									current-text="Data Atual"/>
+					          	<span class="input-group-btn">
+					            	<button style="border : 1px solid #96989a" class="btn btn-default" ng-click="openPopupFim()"><i class="glyphicon glyphicon-calendar"></i></button>
+					          	</span>					        
+				          	</div>
+					    </div>
+					</div>
+				</div>
+
+
+				<div class="form-actions">
+					<a href="#/pesquisaPerfil"><button type="button" class="btn default">Cancelar</button></a>
+					<button id="btnSalvar" type="submit" class="btn blue" ng-disabled="cadastroPerfilForm.$invalid" ng-click="salvar(perfil)">
+						<i class="fa fa-check"></i> Salvar
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</div>

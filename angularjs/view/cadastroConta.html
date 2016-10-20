@@ -1,0 +1,121 @@
+<div class="portlet light bordered">
+	<div class="portlet-title">
+		<div class="caption">
+			<i class="icon-settings BoldGray"></i>
+			<span class="caption-subject BoldGray FontBold uppercase">{{titulo}}</span>
+		</div>
+	</div>
+
+	<div class="portlet-body form">
+		<form name="cadastroLivroForm" class="horizontal-form">
+			<div class="form-body">
+
+				<ui-message message="{{message}}" type="{{type}}" render="{{render}}"></ui-message>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<label class="control-label">Título</label>
+							<div class="input-icon right">
+								<i class="fa fa-exclamation-triangle" ng-show="cadastroLivroForm.nome.$invalid"></i>
+								<input type="text" class="form-control" name="nome" ng-model="livro.nome" ng-required="true">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<label class="control-label">Edição</label>
+							<div class="input-icon right">
+								<i class="fa fa-exclamation-triangle" ng-show="cadastroLivroForm.email.$invalid"></i>
+								<input type="text" class="form-control" name="email" ng-model="livro.email" ng-required="true">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<label class="control-label">Editora</label>
+							<select name="recurso" class="select2 category form-control" ng-model="servidor.idRecurso"
+							ng-options="recurso.denominacao for recurso in recursos">
+								<option value="">Selecione um recurso</option>								
+							</select>
+							<span ng-show="servidorForm.recurso.$invalid" class="span-message">Recurso é obrigatório</span>
+						</div>
+					</div>	
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<label class="control-label">Gênero</label>
+							<select name="recurso" class="select2 category form-control" ng-model="servidor.idRecurso"
+							ng-options="recurso.denominacao for recurso in recursos">
+								<option value="">Selecione um recurso</option>								
+							</select>
+							<span ng-show="servidorForm.recurso.$invalid" class="span-message">Recurso é obrigatório</span>
+						</div>
+					</div>	
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6"  style="padding-left: 0; float: left;">
+						
+						<div class="col-xs-12 col-md-6">
+							<div class="form-group">
+								<label class="control-label">Autores</label>
+								<select name="lst1" multiple  class="select2 category form-control" ng-model="x" ng-options="perfil.descricao for perfil in perfis" ng-dblclick="adicionarPerfilSelecionado(x)"></select>	
+								
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6" style="padding-right: 0; float: right;>
+							<div class="form-group">						    
+								<label class="control-label">Autores Selecionados</label>
+								<i class="fa fa-exclamation-triangle OrangeAGO" ng-show="controls"></i>
+								
+								<div >
+									<select name="lst2" multiple  class="select2 category form-control" ng-model="selected" ng-options="perfil.descricao for perfil in listaPerfisSelecionado" ng-dblclick="excluirPerfilSelecionado(selected)"></select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6"  style="padding-left: 0; float: left;">
+						
+						<div class="col-xs-12 col-md-6">
+							<div class="form-group">
+								<label class="control-label">Categorias</label>
+								<select name="lst1" multiple  class="select2 category form-control" ng-model="x" ng-options="perfil.descricao for perfil in perfis" ng-dblclick="adicionarPerfilSelecionado(x)"></select>	
+								
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6" style="padding-right: 0; float: right;>
+							<div class="form-group">						    
+								<label class="control-label">Categorias Selecionadas</label>
+								<i class="fa fa-exclamation-triangle OrangeAGO" ng-show="controls"></i>
+								
+								<div >
+									<select name="lst2" multiple  class="select2 category form-control" ng-model="selected" ng-options="perfil.descricao for perfil in listaPerfisSelecionado" ng-dblclick="excluirPerfilSelecionado(selected)"></select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-actions">
+					<a href="#/pesquisaLivro"><button type="button" class="btn default">Cancelar</button></a>
+					<button id="btnSalvar" type="submit" class="btn blue" ng-disabled="cadastroLivroForm.$invalid" ng-click="salvar(livro)">
+						<i class="fa fa-check"></i> Salvar
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</div>

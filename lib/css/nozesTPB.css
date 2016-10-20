@@ -292,26 +292,26 @@
 
 .portlet.light {
     padding: 12px 20px 15px 20px;
-    background-color: #f1f3fa;
+    background-color: #FFF;
 }
 
 .portlet.light.bordered > .portlet-title {
-    border-bottom: 1px solid #455a65;
+    border-bottom: 1px solid #CCC;
 }
 
 .portlet.light.bordered {
-    border: 1px solid #455a65 !important;
+    border: 1px solid #CCC !important;
 }
 
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a, .page-sidebar .page-sidebar-menu > li > a {
-    border-bottom: 1px solid #455a65;
+    border-bottom: 1px solid #CCC;
     color: #333333;
-    background-color: #F1F3FA;
+    background-color: #FFF;
 }
 
 .page-container-bg-solid .page-content {
     background: #efecec;
-    border-left: 1px solid #455a65;
+    border-left: 1px solid #CCC
 }
 
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a > .arrow:before, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a > .arrow.open:before, .page-sidebar .page-sidebar-menu li > a > .arrow:before, .page-sidebar .page-sidebar-menu li > a > .arrow.open:before {
@@ -333,14 +333,43 @@
     padding: 20px 10px;
     margin: 0;
     background-color: #FFFFFF;
-    border-top: 1px solid #455a65;
+    border-top: 1px solid #CCC;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
     color: #f1f3fa;
-    background-color: #0288D1;
+    background-color: #CCC;
 }
 
 .btn .btn-primary .btn-block {
   width: 100px;
 }
+
+sidebar .page-sidebar-menu > li:hover > a, .page-sidebar .page-sidebar-menu > li.open > a {
+    background: #FFF;
+    color: #333333;
+}
+
+.page-sidebar .page-sidebar-menu .sub-menu, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu {
+   
+    background-color: #FFF;
+}
+
+.page-sidebar .page-sidebar-menu > li, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li {
+   
+    background-color: #FFF;
+}
+.page-sidebar .page-sidebar-menu, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu {
+   
+    background-color: #FFF;
+}
+
+.page-header.navbar {
+    background-color: #2b3643;
+}
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a, .page-sidebar .page-sidebar-menu .sub-menu > li:hover > a, .page-sidebar .page-sidebar-menu .sub-menu > li.open > a, .page-sidebar .page-sidebar-menu .sub-menu > li.active > a {
+    background: #c6ced8 !important;
+}
+
+

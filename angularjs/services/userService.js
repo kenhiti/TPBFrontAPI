@@ -118,7 +118,8 @@ app.factory("userService", function($rootScope, $location){
 				
 				header = {
 					"Authorization": authorization,
-					"x-date": date
+					"x-date": date,					
+					"Content-Type": undefined
 				};
 			}
 

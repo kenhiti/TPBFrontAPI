@@ -55,7 +55,7 @@
 
 </head>
 
-<body ng-controller="AppController" ng-class="{'login': settings.loginPage,
+<body style="background-color: #FFF" ng-controller="AppController" ng-class="{'login': settings.loginPage,
 											   'page-header-fixed': settings.pageHeaderFixed,
 								               'page-quick-sidebar-over-content': settings.pageQuickSidebarOverContent,
 								               'page-sidebar-closed-hide-logo': settings.pageSidebarClosedHideLogo,
@@ -120,7 +120,9 @@
 	<script type="text/javascript" src="lib/js/angular-cookies.js"></script>
 	<script type="text/javascript" src="lib/js/angular-animate.js"></script>
 	<script type="text/javascript" src="lib/js/ui-bootstrap-tpls-1.1.2.js"></script>
-
+	<script type="text/javascript" src="lib/build/pdf.js"></script>
+	<script type="text/javascript" src="lib/build/pdf.worker.js"></script>
+	
 
 	<script type="text/javascript" src="angularjs/app/app.js"></script>
 	<script type="text/javascript" src="angularjs/config/configValue.js"></script>
@@ -135,13 +137,27 @@
 	<script type="text/javascript" src="angularjs/controllers/pesquisaEditoraCtrl.js"></script>
 	<script type="text/javascript" src="angularjs/controllers/cadastroCategoriaCtrl.js"></script>
 	<script type="text/javascript" src="angularjs/controllers/pesquisaCategoriaCtrl.js"></script>
+	<script type="text/javascript" src="angularjs/controllers/cadastroGeneroCtrl.js"></script>
+	<script type="text/javascript" src="angularjs/controllers/pesquisaGeneroCtrl.js"></script>
+	<script type="text/javascript" src="angularjs/controllers/cadastroPerfilCtrl.js"></script>
+	<script type="text/javascript" src="angularjs/controllers/pesquisaPerfilCtrl.js"></script>
+	<script type="text/javascript" src="angularjs/controllers/cadastroContaCtrl.js"></script>
+	<script type="text/javascript" src="angularjs/controllers/cadastroLivroCtrl.js"></script>
+	<script type="text/javascript" src="angularjs/controllers/pesquisaLivroCtrl.js"></script>
+	<script type="text/javascript" src="angularjs/controllers/visualizarLivroCtrl.js"></script>
 
 	<script type="text/javascript" src="angularjs/services/autorService.js"></script>
 	<script type="text/javascript" src="angularjs/services/editoraService.js"></script>
 	<script type="text/javascript" src="angularjs/services/categoriaService.js"></script>
+	<script type="text/javascript" src="angularjs/services/generoService.js"></script>
+	<script type="text/javascript" src="angularjs/services/perfilService.js"></script>
+	<script type="text/javascript" src="angularjs/services/contaService.js"></script>
+	<script type="text/javascript" src="angularjs/services/livroService.js"></script>
+
 	<script type="text/javascript" src="angularjs/services/tplService.js"></script>
 	<script type="text/javascript" src="angularjs/services/userService.js"></script>
 	<script type="text/javascript" src="angularjs/services/loginService.js"></script>
+	<script type="text/javascript" src="angularjs/services/fileService.js"></script>
 
 	<script type="text/javascript" src="lib/js/hmac-sha256.js"></script>
 	<script type="text/javascript" src="lib/js/enc-base64.js"></script>
@@ -150,6 +166,8 @@
 
 
 	<script type="text/javascript" src="angularjs/directives/uiMessageDirective.js"></script>
+	<script type="text/javascript" src="angularjs/directives/uiFileModelDirective.js"></script>
+	
 	<!-- <script src="../lib/angularjs/services/tplService.js"></script>
 	<script src="../lib/angularjs/services/userService.js"></script>
 	<script src="../lib/angularjs/services/loginService.js"></script>

@@ -73,6 +73,113 @@ app.config(function($routeProvider){
 	});
 
 
+
+	$routeProvider.when("/cadastroGenero",{
+		templateUrl : '/thePirateBook/angularjs/view/cadastroGenero.html',
+		controller : 'cadastroGeneroCtrl'
+	});
+	$routeProvider.when("/cadastroGenero/:id",{
+		templateUrl : '/thePirateBook/angularjs/view/cadastroGenero.html',
+		controller : 'cadastroGeneroCtrl'
+	});
+	$routeProvider.when("/pesquisaGenero",{
+		templateUrl : '/thePirateBook/angularjs/view/pesquisaGenero.html',
+		controller : 'pesquisaGeneroCtrl',
+		resolve : {
+			generos: function(generoAPI){
+				return generoAPI.getGeneros();
+			}
+		}
+	});
+
+	$routeProvider.when("/cadastroPerfil",{
+		templateUrl : '/thePirateBook/angularjs/view/cadastroPerfil.html',
+		controller : 'cadastroPerfilCtrl'
+	});
+	$routeProvider.when("/cadastroPerfil/:id",{
+		templateUrl : '/thePirateBook/angularjs/view/cadastroPerfil.html',
+		controller : 'cadastroPerfilCtrl'
+	});
+	$routeProvider.when("/pesquisaPerfil",{
+		templateUrl : '/thePirateBook/angularjs/view/pesquisaPerfil.html',
+		controller : 'pesquisaPerfilCtrl',
+		resolve : {
+			perfis: function(perfilAPI){
+				return perfilAPI.getPerfis();
+			}
+		}
+	});
+
+	$routeProvider.when("/cadastroConta",{
+		templateUrl : '/thePirateBook/angularjs/view/cadastroConta.html',
+		controller : 'cadastroContaCtrl',
+		resolve :{
+			perfis : function(perfilAPI){
+				return perfilAPI.getPerfis();
+			}
+		}
+	});
+	$routeProvider.when("/cadastroConta/:id",{
+		templateUrl : '/thePirateBook/angularjs/view/cadastroConta.html',
+		controller : 'cadastroContaCtrl',
+		resolve :{
+			perfis : function(perfilAPI){
+				return perfilAPI.getPerfis();
+			}
+		}
+	});
+
+	$routeProvider.when("/cadastroLivro",{
+		templateUrl : '/thePirateBook/angularjs/view/cadastroLivro.html',
+		controller : 'cadastroLivroCtrl',
+		resolve :{
+			editoras : function(editoraAPI){
+				return editoraAPI.getEditora();
+			},
+			autores : function(autorAPI){
+				return autorAPI.getAutores();
+			},
+			categorias : function(categoriaAPI){
+				return categoriaAPI.getCategorias();
+			},
+			generos : function(generoAPI){
+				return generoAPI.getGeneros();
+			},
+		}
+	});
+	$routeProvider.when("/cadastroLivro/:id",{
+		templateUrl : '/thePirateBook/angularjs/view/cadastroLivro.html',
+		controller : 'cadastroLivroCtrl',
+		resolve :{
+			editoras : function(editoraAPI){
+				return editoraAPI.getEditora();
+			},
+			autores : function(autorAPI){
+				return autorAPI.getAutores();
+			},
+			categorias : function(categoriaAPI){
+				return categoriaAPI.getCategorias();
+			},
+			generos : function(generoAPI){
+				return generoAPI.getGeneros();
+			},
+		}
+	});
+	$routeProvider.when("/pesquisaLivro",{
+		templateUrl : '/thePirateBook/angularjs/view/pesquisaLivro.html',
+		controller : 'pesquisaLivroCtrl',
+		resolve : {
+			livros: function(livroAPI){
+				return livroAPI.getLivros();
+			}
+		}
+	});
+
+	$routeProvider.when("/visualizarLivro/:id",{
+		templateUrl : '/thePirateBook/angularjs/view/visualizarLivro.html',
+		controller : 'visualizarLivroCtrl'
+	});
+
 	$routeProvider.otherwise({
 		redirectTo: '/login'
 	});

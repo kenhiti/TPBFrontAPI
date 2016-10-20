@@ -17,15 +17,15 @@
 						<div class="form-group">
 							<label class="control-label">Nome</label>
 							<div class="input-icon right">
-								<i class="fa fa-exclamation-triangle" ng-show="cadastroCategoriaForm.nome.$invalid"></i>
-								<input type="text" class="form-control" name="nome" ng-model="categoria.nome" ng-required="true">
+								<i class="fa fa-exclamation-triangle" ng-show="cadastroCategoriaForm.descricao.$invalid"></i>
+								<input type="text" class="form-control" name="descricao" ng-model="categoria.descricao" ng-required="true">
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="form-actions">
-					<a href="#/pesquisaAutor"><button type="button" class="btn default">Cancelar</button></a>
+					<a href="#/pesquisaCategoria"><button type="button" class="btn default">Cancelar</button></a>
 					<button id="btnSalvar" type="submit" class="btn blue" ng-disabled="cadastroCategoriaForm.$invalid" ng-click="salvar(categoria)">
 						<i class="fa fa-check"></i> Salvar
 					</button>

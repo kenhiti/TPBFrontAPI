@@ -26,7 +26,7 @@ app.factory('loginService', function($http, $location, config, $rootScope, userS
 				
 			},function(errorCode){
 				console.log("Unauthorized");
-				/*scope.tipoMensagem = "alert alert-danger TexAlCenter";
+				scope.tipoMensagem = "alert alert-danger TexAlCenter";
 				scope.mensagem = "Email e/ou senha inválida.";
 				scope.visualizaMensagem = true;
 				
@@ -35,7 +35,7 @@ app.factory('loginService', function($http, $location, config, $rootScope, userS
 				$location.path('/login');
 				var element = $window.document.getElementById("loginWindowSenha");
 		        if(element)
-		          element.focus();*/
+		          element.focus();
 			});
 		},
 

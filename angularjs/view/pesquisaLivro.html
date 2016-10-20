@@ -1,0 +1,135 @@
+<div class="portlet light bordered">
+	<div class="portlet-title">
+		<div class="caption BoldGray FontBold uppercase">Pesquisar Livro</div>
+		<div class="tools">				
+			<a href="#/cadastroLivro"><i class="glyphicon glyphicon-plus BoldGray"></i></a>
+		</div>
+	</div>
+	
+	<div class="portlet-body">
+				
+		<div class="table-responsive">
+		
+			<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Título</th>
+						<th>Edição</th>						
+						<th>Gênero</th>
+						<th>Editora</th>						
+						<th>Ações</th>						
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr ng-repeat="livro in livros">
+						<td>{{livro.idLivro}}</td>
+						<td>{{livro.titulo}}</td>
+						<td>{{livro.edicao}}</td>
+						<td>{{livro.genero.descricao}}</td>
+						<td>{{livro.editora.nome}}</td>																													
+						<td class="TexAlCenter Wid100PX">
+							<a href="#/cadastroLivro/{{livro.idLivro}}">
+								<i class="icon-pencil BoldGray" data-toggle="tooltip" title="Editar"></i>
+							</a>
+							<a ng-click="showModalView(livro)">
+								<i class="fa fa-file-text-o BoldGray" data-toggle="tooltip" title="Visualizar"></i>
+							</a>
+							
+							<!-- <a href="#/visualizarLivro/{{livro.pdf.idArquivo}}">
+								<i class="fa fa-file-text-o BoldGray" data-toggle="tooltip" title="Visualizar"></i>
+							</a> -->
+							<!-- <a href="/thePirateBook/lib/web/viewer.html?file={{livro.fileUrl}}">
+								<i class="fa fa-file-text-o BoldGray" data-toggle="tooltip" title="Visualizar"></i>
+							</a>	 -->						
+						</td>					
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="TexAlCenter">
+				<div id="modalView" class="modal fade">		            
+					<div style="height: 100%;" class="modal-backdrop fade"></div>
+						<div class="modal-dialog modal-lg"> 			          
+							<div class="modal-content"> 
+							  <div class="modal-header"> 
+							    <button ng-click="limparToken()" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> 
+							    <h4 class="modal-title FontBold">Resumo do livro</h4> 
+							  </div> 
+							<div class="modal-body">
+								<table class="table table-bordered table-striped">									
+									<tr>
+										<th>Livro</th>
+										<td>{{livroSelecionado.titulo}}</td>																
+									</tr>
+									<tr>
+										<th>Edição</th>
+										<td>{{livroSelecionado.edicao}}</td>																
+									</tr>	
+									<tr>
+										<th>Gênero</th>
+										<td>{{livroSelecionado.genero.descricao}}</td>																
+									</tr>	
+									<tr>
+										<th>Editora</th>
+										<td>{{livroSelecionado.editora.nome}}</td>																
+									</tr>	
+									<tr>
+										<th>Autor(es)</th>
+										<td ng-repeat="autor in livroSelecionado.autores">
+											<li>{{autor.nome}}</li>
+										</td>																
+									</tr>
+									<tr>
+										<th>Categoria(s)</th>
+										<td ng-repeat="categoria in livroSelecionado.categoria">
+											<li>{{categoria.descricao}}</li>
+										</td>																
+									</tr>
+
+									<tr>
+										<th>Capa</th>
+										<td>
+											<img width="80" height="110" src="{{livroSelecionado.capa.base64}}">
+										</td>																
+									</tr>
+								</table>
+
+								<div class="EmptyBox20"></div>
+
+								<div class="form-actions">
+									<ui-message message="{{message}}" type="{{type}}" render="{{render}}"></ui-message>
+									
+									<label class="control-label">Curta este POST!!!</label></br>
+									
+									<a ng-click="renderMessage()">
+										<div class="fa fa-thumbs-o-up" style="font-size: 50px; color: #3598dc; margin-top: 20px; "></div>
+									</a>															
+								</div>
+
+								<div class="EmptyBox40"></div>								
+
+								<div class="form-actions">
+
+									<label class="control-label">Deseja realmente visualizar este livro ?</label></br>
+									<a href="http://localhost:8080/arquivos/{{livroSelecionado.pdf.idArquivo}}" target="_blank">
+										<button type="button" class="btn blue">
+											<i class="fa fa-check"></i>Sim
+										</button>
+									</a>
+							
+									<button type="button" class="btn default" ng-click="hideModalView()">Não</button>
+															
+								</div>
+
+								<div class="EmptyBox20"></div>
+							</div> 
+						</div> 
+					</div> 
+				</div>				
+			</div>	
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,152 @@
+<div class="portlet light bordered">
+	<div class="portlet-title">
+		<div class="caption">
+			<i class="icon-settings BoldGray"></i>
+			<span class="caption-subject BoldGray FontBold uppercase">{{titulo}}</span>
+		</div>
+	</div>
+
+	<div class="portlet-body form">
+		<form name="cadastroLivroForm" class="horizontal-form">
+			<div class="form-body">
+
+				<ui-message message="{{message}}" type="{{type}}" render="{{render}}"></ui-message>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<label class="control-label">Título</label>
+							<div class="input-icon right">
+								<i class="fa fa-exclamation-triangle Orange" ng-show="cadastroLivroForm.titulo.$invalid"></i>
+								<input type="text" class="form-control" name="titulo" ng-model="livro.titulo" ng-required="true">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<label class="control-label">Edicão</label>
+							<div class="input-icon right">
+								<i class="fa fa-exclamation-triangle Orange" ng-show="cadastroLivroForm.edicao.$invalid"></i>
+								<input type="text" class="form-control" name="edicao" ng-model="livro.edicao" ng-required="true">
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<label class="control-label">Editora</label>
+							<div class="input-icon right">
+								<i class="fa fa-exclamation-triangle Orange" ng-show="cadastroLivroForm.editora.$invalid"></i>
+								<select  class="select2 category form-control" name="editora" ng-model="livro.editora" ng-required="true" ng-options="editora.nome for editora in editoras"></select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<label class="control-label">Gênero</label>
+							<div class="input-icon right">
+								<i class="fa fa-exclamation-triangle Orange" ng-show="cadastroLivroForm.genero.$invalid"></i>
+								<select  class="select2 category form-control" name="genero" ng-model="livro.genero" ng-required="true" ng-options="genero.descricao for genero in generos"></select>
+							</div>
+						</div>
+					</div>
+				</div>						
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6"  style="padding-left: 0; float: left;">
+						
+						<div class="col-xs-12 col-md-6">
+							<div class="form-group">
+
+								<label class="control-label">Autores</label>													
+									
+								<select name="lst1" multiple  class="select2 category form-control" ng-model="x" ng-options="autor.nome for autor in autores" ng-dblclick="adicionarAutorSelecionado(x)"></select>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6" style="padding-right: 0; float: right;>
+							<div class="form-group">						    
+								<label class="control-label">Autores selecionados</label>
+								<i class="fa fa-exclamation-triangle Orange OrangeAGO" ng-show="listaAutoresSelecionados.length == 0 "></i>
+								
+								<div >
+									<select name="lst2" multiple  class="select2 category form-control" ng-model="selected" ng-options="autor.nome for autor in listaAutoresSelecionados" ng-dblclick="excluirAutorSelecionado(selected)"></select>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+
+				<div class="row">
+					<div class="col-xs-12 col-md-6"  style="padding-left: 0; float: left;">
+						
+						<div class="col-xs-12 col-md-6">
+							<div class="form-group">
+
+								<label class="control-label">Categorias</label>													
+									
+								<select name="lst1" multiple  class="select2 category form-control" ng-model="x" ng-options="categoria.descricao for categoria in categorias" ng-dblclick="adicionarCategoriaSelecionada(x)"></select>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6" style="padding-right: 0; float: right;">
+							<div class="form-group">						    
+								<label class="control-label">Categorias Selecionadas</label>
+								<i class="fa fa-exclamation-triangle Orange " ng-show="listaCategoriasSelecionadas.length == 0 "></i>
+								
+								<div >
+									<select name="lst2" multiple  class="select2 category form-control" ng-model="selected" ng-options="categoria.descricao for categoria in listaCategoriasSelecionadas" ng-dblclick="excluirCategoriaSelecionada(selected)"></select>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+							
+
+				<div class="row">			
+					<div class="col-xs-12 col-md-4">
+						<div class="form-group">
+							<label class="control-label">Capa</label>
+							<div class="input-icon right">
+								<i class="fa fa-exclamation-triangle" ng-show="cadastroLivroForm.imagem.$invalid"></i>
+								<input type="file" name="imagem" ui-filemodel="image" style="margin: 0px !important; display: inline;">
+								<button type="button" style="float: right;" ng-click="convertToByteArray('Image')" ng-if="image != null">Carregar</button>		
+							</div>
+						</div>														
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<img alt="Capa" src="{{livro.capa.base64}}" ng-if="livro.capa.base64 != null" style="width: 150px;">
+					</div>
+				</div>
+
+				<div class="row">			
+					<div class="col-xs-12 col-md-6">
+						<div class="form-group">
+							<label class="control-label">Livro</label>
+							<div class="input-icon right">
+								<i class="fa fa-exclamation-triangle" ng-show="cadastroLivroForm.pdf.$invalid"></i>
+								<input type="file" name="pdf" ui-filemodel="pdf" style="margin: 0px !important; display: inline;">
+								<button type="button" style="float: right;" ng-click="convertToByteArray('Pdf')" ng-if="pdf != null">Carregar</button>
+							</div> 
+						</div>								
+					</div>
+				</div>
+
+				<div class="form-actions">
+					<a href="#/pesquisaLivro"><button type="button" class="btn default">Cancelar</button></a>
+					<button id="btnSalvar" type="submit" class="btn blue" ng-disabled="cadastroLivroForm.$invalid || listaCategoriasSelecionadas.length == 0 || listaAutoresSelecionados.length == 0 " ng-click="salvar(livro)">
+						<i class="fa fa-check"></i> Salvar
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</div>

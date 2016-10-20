@@ -8,7 +8,7 @@ app.controller("cadastroCategoriaCtrl", function($scope,$routeParams, categoriaA
 	$scope.render = false;
 
 	$scope.salvar = function(categoria){
-
+		console.log(categoria);
 		var $promisse;
 
 		if($routeParams.id != undefined){
@@ -37,7 +37,7 @@ app.controller("cadastroCategoriaCtrl", function($scope,$routeParams, categoriaA
 	}
 
 	var buscarEdicao = function(){
-		autorAPI.getCategoriaById($routeParams.id).success(function(data){
+		categoriaAPI.getCategoriaById($routeParams.id).success(function(data){
 			$scope.categoria = data;
 		});
 	};

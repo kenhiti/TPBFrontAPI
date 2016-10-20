@@ -5,6 +5,11 @@ app.controller("loginCtrl", function($scope, loginService, tplService){
 
 	$scope.loginData = {};
 	
+	$scope.mensagem;
+	$scope.tipoMensagem;
+	$scope.visualizaMensagem = false;
+	
+	
 	$scope.login = function(loginData){		
 		loginService.login(loginData, $scope);		
 	};

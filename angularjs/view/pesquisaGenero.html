@@ -1,0 +1,37 @@
+<div class="portlet light bordered">
+	<div class="portlet-title">
+		<div class="caption BoldGray FontBold uppercase">Pesquisar Gêneros</div>
+		<div class="tools">
+			<a href="#/cadastroGenero"><i class="glyphicon glyphicon-plus BoldGray"></i></a>
+		</div>
+	</div>
+
+	<div class="portlet-body">
+
+		<div class="table-responsive">
+
+			<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Nome</th>
+						<th>Ações</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr ng-repeat="genero in generos">
+						<td>{{genero.idGenero}}</td>
+						<td>{{genero.descricao}}</td>
+						<td class="TexAlCenter Wid100PX">
+							<a href="#/cadastroGenero/{{genero.idGenero}}">
+								<i class="icon-pencil BoldGray" data-toggle="tooltip" title="Editar"></i>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+<div class="portlet light bordered">
+	<div class="portlet-title">
+		<div class="caption">
+			<i class="icon-settings BoldGray"></i>
+			<span class="caption-subject BoldGray FontBold uppercase">{{titulo}}</span>
+		</div>
+	</div>
+
+	<div class="portlet-body form">
+		<form name="cadastroGeneroForm" class="horizontal-form">
+			<div class="form-body">
+
+				<ui-message message="{{message}}" type="{{type}}" render="{{render}}"></ui-message>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="form-group">
+							<label class="control-label">Descrição</label>
+							<div class="input-icon right">
+								<i class="fa fa-exclamation-triangle" ng-show="cadastroGeneroForm.descricao.$invalid"></i>
+								<input type="text" class="form-control" name="descricao" ng-model="genero.descricao" ng-required="true">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-actions">
+					<a href="#/pesquisaGenero"><button type="button" class="btn default">Cancelar</button></a>
+					<button id="btnSalvar" type="submit" class="btn blue" ng-disabled="cadastroGeneroForm.$invalid" ng-click="salvar(genero)">
+						<i class="fa fa-check"></i> Salvar
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</div>
